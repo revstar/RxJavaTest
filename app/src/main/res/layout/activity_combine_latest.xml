@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CombineLatestActivity">
+<EditText
+    android:id="@+id/name"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:hint="请输入姓名"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入年龄"
+        android:layout_below="@+id/name"/>
+    <EditText
+        android:id="@+id/job"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入职业"
+        android:layout_below="@+id/age"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:enabled="false"
+        android:layout_below="@+id/job"/>
+
+</RelativeLayout>
